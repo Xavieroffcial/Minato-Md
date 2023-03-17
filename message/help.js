@@ -16,7 +16,18 @@ function toCommas(x) {
 	   x = x.replace(pattern, "$1.$2");
 	return x;
 }
+//—————「 Menu 」—————//
+exports.menu = (botname, pushname, salam) => {
+	return`Selamat ${salam} kak ${pushname}
 
+Saya ${botname}, Bot Ini Adalah Beta Multi-Device WhatsApp.
+Jika Kamu Menemukan Semacam Bug Atau Kesalahan Mohon Dimaklumi Dulu Ya, Lapor Owner Agar Segera Di Perbaiki🙏`
+}
+
+//—————「 List 」—————//
+exports.list = (pushname) => {
+	return`Halo kak ${pushname}, silahkan dipilih list menu dibawah ini`
+}
 exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount, ucapanWaktu) => {
 	return `*── 「 ${setting.botName} 」 ──*
 	
